@@ -1,5 +1,7 @@
 # TestProject
 
+https://test-project-4e4aa.web.app/#/login
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
 
 ## Development server
