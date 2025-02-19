@@ -39,9 +39,11 @@ import { UserCredentials } from '../../../core/models/user.interface';
           </div>
         </div>
 
-        <div class="error-message" *ngIf="error$ | async as error">
-          {{ error }}
+        <div class="auth-error" *ngIf="error$ | async as error">
+          <span class="error-icon">⚠️</span>
+          <span>Проверьте правильность введенных данных</span>
         </div>
+
         <button type="submit" [disabled]="loginForm.invalid || (loading$ | async)">
           {{ (loading$ | async) ? 'Вход...' : 'Войти' }}
         </button>
